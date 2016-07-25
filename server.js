@@ -5,7 +5,7 @@ var express = require('express'),
     // import custom countwitt module
     // and set up filter words
     countwitt = require('./countwitt.js'),
-    counts = countwitt(['awesome']);
+    counts = countwitt(['awesome', 'gnarly']);
 
 
 // set up static file directory to allow for direct resource serving

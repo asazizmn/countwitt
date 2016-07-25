@@ -36,6 +36,7 @@ var ntwitter = require('ntwitter'),
                 // please note that 'wordCount' will be null if key is missing
                 // so the following initialises the counter with the retrieved data, or 0
                 counts[word] = parseInt(wordCount, 10) || 0;
+                if (!wordCount) redisClient.set(word, 0);
 
                 // define the stream
                 // param 1 - type of stream
