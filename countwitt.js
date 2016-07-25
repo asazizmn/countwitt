@@ -2,12 +2,12 @@ var ntwitter = require('ntwitter'),
 
     // create a client to connect to redis
     redis = require('redis'),
-    redisClient = redis.createClient();
+    redisClient = redis.createClient(),
 
-// please note that './' requests node to look at the current dir
-// without it, the 'node_modules' will be searched instead
-// initialise twitter object to allow streaming
-credentials = require('./credentials.json'),
+    // please note that './' requests node to look at the current dir
+    // without it, the 'node_modules' will be searched instead
+    // initialise twitter object to allow streaming
+    credentials = require('./credentials.json'),
     twitter = ntwitter(credentials),
 
 
