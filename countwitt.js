@@ -22,8 +22,6 @@ var ntwitter = require('ntwitter'),
         // iterate through words, 
         // and initialise each by retrieving the existing count from redis
         trackedWords.forEach(function (word) {
-            // counts[word] = 0;
-            // redisClient.set(word, 0);
 
             redisClient.get(word, function (err, wordCount) {
 
