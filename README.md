@@ -15,3 +15,8 @@ To experiment with connecting to a social API like Twitter, and storing results 
 7. Now, provided that you already have node.js and relevant modules installed on your system, run the application with the command 'node server.js'
 8. Open up a browser like chrome, and enter 'localhost:3000' in the url, to view the results
 9. To stop the stream, go back to the console and type Ctrl-C to stop the stream!
+
+# Dependencies
+
+1. "ntwitter": "0.5.x"
+2. "redis": "0.8.x"
